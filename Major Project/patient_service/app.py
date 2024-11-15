@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 import requests
 from functools import wraps
-from flask_cors import CORS
+#from flask_cors import CORS
 import json
 import datetime
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Replace with a strong secret key
-CORS(app)
+app.secret_key = 'your_secret_key' 
+#CORS(app)
 # Mock database
 users = {}
 appointments = []
