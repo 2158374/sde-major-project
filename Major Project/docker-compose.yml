@@ -17,17 +17,17 @@ services:
     networks:
       - hospital-network
 
-  appointment-service:
-    image: appointment-service:latest
-    container_name: appointment_service
+  billing-service:
+    image: billing-service:latest
+    container_name: billing_service
     ports:
       - "5003:5003"
     networks:
       - hospital-network
 
-  billing-service:
-    image: billing-service:latest
-    container_name: billing_service
+  pharmacy-service:
+    image: pharmacy-service:latest
+    container_name: pharmacy_service
     ports:
       - "5004:5004"
     networks:
