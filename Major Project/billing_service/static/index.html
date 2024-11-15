@@ -170,7 +170,7 @@
             //var billId = document.getElementById("bill_id").value;
             const billId = parseInt(document.getElementById('payment-bill-id').value, 10);
                             
-            fetch('http://127.0.0.1:5003/get-amounts', {
+            fetch('http://34.171.68.133:5003/get-amounts', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ billId: billId }),
