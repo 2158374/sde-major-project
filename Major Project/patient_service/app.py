@@ -130,7 +130,7 @@ def updateDoctorService(appointment,username):
     }
 
     # Send the appointment to the doctor service
-    doctor_service_url = 'http://localhost:5002/api/appointments'  # Replace with actual doctor service address
+    doctor_service_url = 'http://34.171.68.133:5002/api/appointments'  # Replace with actual doctor service address
     try:        
         response = requests.post(doctor_service_url, json=appintment_data)
         response.raise_for_status()  # Raises an error if the request was unsuccessful
